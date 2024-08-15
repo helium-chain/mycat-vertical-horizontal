@@ -91,7 +91,7 @@ services:
     volumes:
       - ./mycat/conf/server.xml:/home/mycat/conf/server.xml
       - ./mycat/conf/schema.xml:/home/mycat/conf/schema.xml
-      # - ./mycat/conf/rule.xml:/home/mycat/conf/rule.xml
+      - ./mycat/conf/rule.xml:/home/mycat/conf/rule.xml
     ports:
       - "8066:8066"
       - "9066:9066"
